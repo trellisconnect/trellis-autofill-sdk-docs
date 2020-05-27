@@ -1,7 +1,5 @@
 # Trellis Autofill Documentation
 
-Last updated: 05/26/2020
-
 Contact: support@trellisconnect.com
 
 ## Basic Installation
@@ -21,10 +19,10 @@ Opens Trellis to allow the user to login or to initiate the redirect.
 <button>Start the login process</button>
 <script>
 (() => {
-  const button = document.querySelector(‘button’);
-  TrellisAutofill.configure({clientId: 'YOUR_ID_HERE'});
-  button.addEventListener(‘click’, () => {
-    TrellisAutofill.open();
+  const button = document.querySelector('button');
+  const handler =  TrellisAutofill.configure({clientId: 'YOUR_ID_HERE'});
+  button.addEventListener('click', () => {
+    handler.open();
   });
 })();
 </script>
