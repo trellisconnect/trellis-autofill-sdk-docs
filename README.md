@@ -6,7 +6,7 @@ Contact: support@trellisconnect.com
 
 ## Basic Installation
 
-```
+```javascript
 <script src="//cdn.trellisconnect.com/autofill/v1.0/autofill.js"></script>
 <script>TrellisAutofill.configure({clientId: 'YOUR_ID_HERE'});</script>
 ```
@@ -16,7 +16,7 @@ Contact: support@trellisconnect.com
 
 Opens Trellis to allow the user to login or to initiate the redirect.
 
-```
+```javascript
 <script src="//cdn.trellisconnect.com/autofill/v1.0/autofill.js"></script>
 <button>Start the login process</button>
 <script>
@@ -42,7 +42,7 @@ Returns whether the user has data available for their account.
 
 Trellis Autofill calls onLoad when the app has finished loading and is ready to be interacted with. Use this callback to perform initial data checks such as `isLoggedIn` and `hasData`. 
 
-```
+```javascript
 <script>
 (() => {
   TrellisAutofill.configure({
@@ -62,7 +62,7 @@ Trellis Autofill calls onLoad when the app has finished loading and is ready to 
 
 Trellis Autofill calls onEvent() as events occur through the user journey. This can be used for user tracking/analytics or for page behavior responding to the user. onEvent receives two arguments: the name of the event, and an object of metadata regarding the event.
 
-```
+```javascript
 <script>
 TrellisAutofill.configure({
 clientId: ‘my-client-id’,
@@ -92,7 +92,7 @@ clientId: ‘my-client-id’,
 
 Example:
 
-```
+```javascript
 <script>
 TrellisAutofill.configure({
 clientId: ‘my-client-id’,
