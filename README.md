@@ -7,7 +7,7 @@ Contact: support@trellisconnect.com
 ```html
 <script src="//cdn.trellisconnect.com/autofill/v1.0/autofill.js"></script>
 <script>
-  const handler = TrellisAutofill.configure({ client_id: "YOUR_ID_HERE" });
+  const handler = TrellisAutofill.configure({ client_id: 'YOUR_ID_HERE' });
 </script>
 ```
 
@@ -28,9 +28,9 @@ Opens Trellis to allow the user to login or to initiate the redirect.
 <button>Start the login process</button>
 <script>
   (() => {
-    const button = document.querySelector("button");
-    const handler = TrellisAutofill.configure({ client_id: "YOUR_ID_HERE" });
-    button.addEventListener("click", () => {
+    const button = document.querySelector('button');
+    const handler = TrellisAutofill.configure({ client_id: 'YOUR_ID_HERE' });
+    button.addEventListener('click', () => {
       handler.open();
     });
   })();
@@ -40,23 +40,20 @@ Opens Trellis to allow the user to login or to initiate the redirect.
 ## destroy() function
 
 ```js
-const handler = TrellisAutofill.configure({ client_id: "YOUR_ID_HERE" });
+const handler = TrellisAutofill.configure({ client_id: 'YOUR_ID_HERE' });
 // when you're ready to unmount the Autofill widget...
 handler.destroy();
 ```
 
 ## onLoad() callback
 
-Trellis Autofill calls onLoad when the app has finished loading and is ready to be interacted with. Use this callback to perform initial data checks such as `isLoggedIn` and `hasData`.
+Trellis Autofill calls onLoad when the app has finished loading and is ready to be interacted with.
 
 ```javascript
 TrellisAutofill.configure({
   client_id: 'YOUR_ID_HERE',
   onLoad: () => {
     console.log(Autofill has loaded’);
-    if (TrellisAutofill.isLoggedIn()) {
-      // custom logic
-    }
   },
 });
 ```
