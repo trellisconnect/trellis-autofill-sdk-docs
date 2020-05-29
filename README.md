@@ -45,22 +45,6 @@ const handler = TrellisAutofill.configure({ client_id: "YOUR_ID_HERE" });
 handler.destroy();
 ```
 
-## isLoggedIn() function
-
-Returns whether the user has successfully connected their insurance account using the login widget. Will return true once credentials have been accepted – whether or not policy data has loaded.
-
-```js
-TrellisAssistant.isLoggedIn();
-```
-
-## hasData() function
-
-Returns whether the user has data available for their account.
-
-```js
-TrellisAssistant.hasData();
-```
-
 ## onLoad() callback
 
 Trellis Autofill calls onLoad when the app has finished loading and is ready to be interacted with. Use this callback to perform initial data checks such as `isLoggedIn` and `hasData`.
