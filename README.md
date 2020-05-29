@@ -11,6 +11,10 @@ Contact: support@trellisconnect.com
 </script>
 ```
 
+## Test Mode
+
+You can enable test mode by adding `?t=1` to the URL of the page where you're including Autofill. This will allow you to sign in with the `Trellis Demo` issuer and use the demo account for testing.
+
 ## Configuration Options
 
 | Option      | Description                                                                           |
