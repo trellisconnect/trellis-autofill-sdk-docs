@@ -15,6 +15,10 @@ Contact: support@trellisconnect.com
 
 You can enable test mode by adding `?t=1` to the URL of the page where you're including Autofill. This will allow you to sign in with the `Trellis Demo` issuer and use the demo account for testing.
 
+### Disable Sticky State
+
+If you'd like to disable sticky state without using test mode, you can add `?features=nostickystate` to the URL of the page where you're including Autofill.
+
 ## Configuration Options
 
 | Option      | Description                                                                           |
