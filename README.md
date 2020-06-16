@@ -19,6 +19,10 @@ You can enable test mode by adding `?t=1` to the URL of the page where you're in
 
 If you'd like to disable sticky state without using test mode, you can add `?features=nostickystate` to the URL of the page where you're including Autofill.
 
+### Skip Provider Cache
+
+To force a fresh provider request add `?skipProviderCache=true` to the URL of the page.
+
 ## Configuration Options
 
 | Option      | Description                                                                           |
