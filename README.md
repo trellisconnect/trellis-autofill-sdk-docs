@@ -117,3 +117,19 @@ TrellisAutofill.configure({
   },
 });
 ```
+
+# Trellis Conversion Tracking Pixel
+
+Trellis offers a tag you can drop on your page which will track events through the user journey for correlative analysi.
+
+```html
+<script>
+  var script = document.createElement('script');
+  script.setAttribute('pagename', 'PAGE_NAME');
+  script.setAttribute('clientname', 'YOUR_COMPANY_NAME');
+  script.setAttribute('client_user_id', 'YOUR_USER_ID');
+  script.setAttribute('client_experiments', 'YOUR_EXPERIMENT_LIST');
+  script.src = '//cdn.trellisconnect.com/cta/trellispixel.js';
+  document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+```
